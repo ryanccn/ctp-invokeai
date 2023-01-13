@@ -1,7 +1,7 @@
 /* ==UserStyle== 
 @name           InvokeAI Catppuccin
 @namespace      github.com/catppuccin/invokeai
-@version        0.0.2
+@version        0.0.3
 @description    Soothing pastel theme for InvokeAI
 @author         Catppuccin
 @updateURL      https://github.com/catppuccin/invokeai/raw/main/catppuccin.user.css
@@ -182,10 +182,10 @@
     --accent-color: $accent;
     --accent-color-bright: lighten($accent, 10%);
     --accent-color-hover: var(--accent-color-bright);
-    --root-bg-color: $crust;
-    --background-color: $mantle;
-    --background-color-light: $base;
-    --background-color-secondary: $surface0;
+    --root-bg-color: $mantle;
+    --background-color: $base;
+    --background-color-light: $surface0;
+    --background-color-secondary: $surface1;
     --text-color: $text;
     --text-color-secondary: $subtext1;
     --subtext-color: $subtext2;
