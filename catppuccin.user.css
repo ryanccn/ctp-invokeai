@@ -10,7 +10,7 @@
 @var select accent "Accent color" ["Rosewater", "Flamingo", "Pink", "Mauve", "Red", "Maroon", "Peach", "Yellow", "Green", "Teal", "Sky", "Sapphire", "Blue", "Lavender"]
 ==/UserStyle== */
 
-@-moz-document regexp("http://127.0.0.1:9090\\/(.*)") {
+@-moz-document regexp("http:\/\/(127\.0\.0\.1|localhost):9090(.*)") {
   if (theme=="Latte") {
       $type = light;
 
