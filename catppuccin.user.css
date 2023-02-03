@@ -1,7 +1,7 @@
 /* ==UserStyle== 
 @name           InvokeAI Catppuccin
 @namespace      github.com/catppuccin/invokeai
-@version        0.0.3
+@version        0.0.4
 @description    Soothing pastel theme for InvokeAI
 @author         Catppuccin
 @updateURL      https://github.com/catppuccin/invokeai/raw/main/catppuccin.user.css
@@ -10,7 +10,7 @@
 @var select accent "Accent color" ["Rosewater", "Flamingo", "Pink", "Mauve", "Red", "Maroon", "Peach", "Yellow", "Green", "Teal", "Sky", "Sapphire", "Blue", "Lavender"]
 ==/UserStyle== */
 
-@-moz-document regexp("http:\/\/(127\.0\.0\.1|localhost):9090(.*)") {
+@-moz-document regexp("http:\\/\\/(127\\.0\\.0\\.1|localhost):9090(.*)") {
   if (theme=="Latte") {
       $type = light;
 
@@ -185,7 +185,7 @@
     --root-bg-color: $mantle;
     --background-color: $base;
     --background-color-light: $surface0;
-    --background-color-secondary: $surface1;
+    --background-color-secondary: $base;
     --text-color: $text;
     --text-color-secondary: $subtext1;
     --subtext-color: $subtext2;
@@ -222,8 +222,12 @@
     --number-input-color: var(--text-color-secondary) !important;
   }
   
-  .invoke-btn, .site-header-right-side .lang-select-btn[data-selected=true], .site-header-right-side .lang-select-btn[data-selected=true]:hover, button.chakra-button.invokeai__icon-button[data-selected=true] {
+  .invoke-btn, .invokeai__button[data-active], .site-header-right-side .lang-select-btn[data-selected=true], .site-header-right-side .lang-select-btn[data-selected=true]:hover, button.chakra-button.invokeai__icon-button[data-selected=true] {
     --svg-color: var(--root-bg-color);
     color: var(--root-bg-color) !important;
+  }
+  
+  .invokeai-style-cache-vs1g06, .invokeai-style-cache-vs1g06:hover {
+    background-color: var(--background-color-light);
   }
 }
